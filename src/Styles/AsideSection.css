@@ -1,0 +1,59 @@
+/* AsideSection.css */
+.main-content {
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+  flex-direction: row; /* Ensure horizontal layout on large screens */
+}
+
+.popular-posts {
+  flex: 1; /* Sidebar */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.popular-posts h2 {
+  text-align: left;
+  color: #29335c;
+  margin-bottom: 20px;
+}
+
+.post-item {
+  margin-bottom: 20px;
+}
+
+.post-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-item h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.latest-news-section {
+  flex: 3; /* Main Content */
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Hide the scrollbar */
+.latest-news-section::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack Popular Posts below Latest News */
+  }
+
+  .popular-posts {
+    margin-top: 20px;
+  }
+}
