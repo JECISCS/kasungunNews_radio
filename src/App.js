@@ -5,7 +5,6 @@ import React from 'react';
 import AsideSection from './components/AsideSection';
 
 import Hero from './components/Hero';
-import LatestNews from './components/LatestNews';
 import CommentSection from './components/Commentsection'; /* no error here bruuh*/
 import Footer from './components/Footer';
 
@@ -19,7 +18,7 @@ function App() {
       <Hero/>
      <AsideSection/>
      <CommentSection/>
-     <Footer/>
+
     
      
     </div>

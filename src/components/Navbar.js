@@ -31,3 +31,45 @@ function Navbar() {
 }
 
 export default Navbar;
+/*
+
+
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons';
+import { useRef } from "react";
+import "../Styles/NavBar.css";
+
+
+function Navbar() {
+
+   const navRef = useRef()
+   const showNav_bar = () => {
+
+      navRef.current.classList.toggle("rensponsive_nav")
+   }
+   return (
+      <header>
+         <h3>logo</h3>
+         <nav ref={navRef}>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">Updates</a>
+            <a href="#">home</a>
+            <button className="nav_close_btn" onClick={showNav_bar}>
+               <FontAwesomeIcon icon={faTimes} />
+            </button>
+         </nav>
+         <button className="nav_btn" onClick={showNav_bar}>
+            <FontAwesomeIcon icon={faBars} />
+         </button>
+
+      </header>
+   );
+}
+export default Navbar;
+
+
+
+
+*/
